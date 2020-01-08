@@ -24,6 +24,7 @@ A few examples:
 - *.algolia.com will restrict access to all referers ending with .algolia.com
 - If you want to allow access for the full domain algolia.com, you can use *algolia.com/*
 
+Regarding security, you should know that referers can be easily spoofed like any other HTTP header, so you should not rely on this technique alone for securing requests.
 
 ### Installation
 
@@ -31,7 +32,30 @@ A few examples:
 npm i nestjs-referers --save
 ```
 
-### Examples
+### Basic usage
+
+You can checkout the usage of this package with this example.
+
+**test.controller.ts**
+
+```typescript
+import { Controller,Get} from '@nestjs/common';
+import { ValidateReferers } from "nestjs-referers"
+
+
+@Controller('test')
+export class TestController {
+    constructor(){}
+
+    @Get('/')
+    @ValidateReferers("*localhost*","https://website/*")
+    async testRoute() {
+       return "OK"
+    }
+}
+
+
+```
 
 
 
