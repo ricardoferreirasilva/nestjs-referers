@@ -1,5 +1,5 @@
 import { Injectable, CanActivate, ExecutionContext } from '@nestjs/common';
-import { Reflector } from '@nestjs/core';
+import {Reflector} from '@nestjs/core';
 import { Request } from 'express';
 
 @Injectable()
