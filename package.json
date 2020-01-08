@@ -29,21 +29,30 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nestjsplus/nestjs-package-starter"
+    "url": "https://github.com/ricardoferreirasilva/nestjs-referers"
   },
-  "bugs": "https://github.com/nestjsplus/nestjs-package-starter",
+  "bugs": "https://github.com/ricardoferreirasilva/nestjs-referers",
   "peerDependencies": {
     "@nestjs/common": "^6.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "rxjs": "^6.3.3"
+  },
   "devDependencies": {
+    "rxjs": "^6.3.3",
     "@nestjs/common": "^6.0.0",
     "@nestjs/core": "^6.0.0",
-    "@nestjs/platform-express": "^6.0.0",
     "@nestjs/testing": "6.1.1",
+    "@types/config": "0.0.34",
+    "@types/cote": "^0.19.0",
+    "@types/dotenv": "^6.1.1",
     "@types/express": "4.16.1",
     "@types/jest": "24.0.11",
     "@types/node": "11.13.4",
+    "@types/passport-facebook": "^2.1.9",
+    "@types/passport-jwt": "^3.0.1",
+    "@types/passport-local": "^1.0.33",
+    "@types/request-ip": "0.0.34",
     "@types/supertest": "2.0.7",
     "jest": "24.7.1",
     "prettier": "1.17.0",
