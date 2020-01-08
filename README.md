@@ -11,6 +11,7 @@
 <div align="center">
   <a href="https://nestjs.com" target="_blank">
     <img src="https://img.shields.io/badge/built%20with-NestJs-red.svg" alt="Built with NestJS">
+    <img src="https://github.com/ricardoferreirasilva/nestjs-referers/workflows/Node%20CI/badge.svg" alt="CI Badge" />
   </a>
 </div>
 
