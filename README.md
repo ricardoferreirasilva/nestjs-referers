@@ -14,6 +14,27 @@
   </a>
 </div>
 
+### Introduction
+
+NestJS Referers is a simple package that implements decorator based validation for the referer header of incoming HTTP requests.
+The adopted syntax for specifying allowed URL's was based on [Algolia's](https://www.algolia.com/doc/guides/security/api-keys/in-depth/api-key-restrictions/))** example.
+
+A few examples:
+- https://algolia.com/* will restrict access to all referers starting with https://algolia.com
+- *.algolia.com will restrict access to all referers ending with .algolia.com
+- If you want to allow access for the full domain algolia.com, you can use *algolia.com/*
+
+
+### Installation
+
+```bash
+npm i nestjs-referers --save
+```
+
+### Examples
+
+
+
 ### Installation for Development
 
 1. Clone the repo
