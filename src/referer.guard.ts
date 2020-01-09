@@ -9,13 +9,18 @@ export class RefererGuard implements CanActivate {
   canActivate(context: ExecutionContext,): boolean | Promise<boolean> {
     const request : Request = context.switchToHttp().getRequest();
     const requestReferer = request.headers.referer;
-    const referers = this.reflector.get<string[]>('referers', context.getHandler());
-    for(let referer of referers){
-        const refererRegex = this.produceRefererRegex(referer);
-        const match = requestReferer.match(refererRegex);
-        if(match) return true;
+    if(requestReferer){
+      const referers = this.reflector.get<string[]>('referers', context.getHandler());
+      for(let referer of referers){
+          const refererRegex = this.produceRefererRegex(referer);
+          const match = requestReferer.match(refererRegex);
+          if(match) return true;
+      }
+      return false;
     }
-    return false;
+    else{
+      return false;
+    }
   }
 
   private produceRefererRegex(referer : string) : RegExp {

@@ -1,6 +1,6 @@
 {
   "name": "nestjs-referers",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "A NestJS package for using decorator based referer validation for requests.",
   "author": "Ricardo Ferreira da Silva <contact@ricardoferreirasilva.pt>",
   "license": "MIT",
@@ -37,10 +37,10 @@
     "@nestjs/core": "^6.0.0"
   },
   "dependencies": {
-    "rxjs": "^6.3.3"
+    "rxjs": "^6.3.3",
+    "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
-    "rxjs": "^6.3.3",
     "@nestjs/common": "^6.0.0",
     "@nestjs/core": "^6.0.0",
     "@nestjs/testing": "6.1.1",
