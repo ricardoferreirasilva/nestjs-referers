@@ -1,0 +1,6 @@
+# action.yml
+name: 'Docker CI'
+description: 'Run npm install and tests with docker.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
