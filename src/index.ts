@@ -1,1 +1,1 @@
-export * from './referer.decorator';
+export * from './validate.decorator';
